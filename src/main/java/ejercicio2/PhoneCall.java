@@ -10,8 +10,8 @@ package ejercicio2;
  * @author dani
  */
 public abstract class PhoneCall {
-    private String phoneNumber;
-    private double price;
+    protected String phoneNumber;
+    protected double price;
     
     public PhoneCall(String phoneNumber){
         this.phoneNumber = phoneNumber;
@@ -20,5 +20,11 @@ public abstract class PhoneCall {
     
     public void setPrice(double price){
         this.price = price;
-    }
+    }        
+    
+    public abstract String getPhoneNumber();
+    
+    public abstract double getPrice();
+    
+    public abstract String getInfo();
 }
